@@ -4,9 +4,9 @@
   "description": "Kiran's React Node test",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config webpack.config.js --mode development",
+    "dev": "webpack --config webpack.config.js --mode development --watch",
     "buildserve": "webpack --config webpack.server.config.js --mode development",
-    "serve": "nodemon server/app.js",
+    "serve": "nodemon src/server/app.js",
     "start": "concurrently  \"npm run dev\" \"npm run serve\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,9 @@
   "dependencies": {
     "concurrently": "^4.0.1",
     "express": "^4.16.3",
+    "mobx": "^3.1.9",
+    "mobx-react": "^4.1.8",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "yarn": "^1.9.4"

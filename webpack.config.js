@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: './client/index.js',
+  entry: './src/client/index.js',
 
   output: {
     path: path.resolve(__dirname, 'assets'),

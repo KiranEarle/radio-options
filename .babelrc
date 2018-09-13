@@ -10,6 +10,9 @@
           "syntax": "postcss-scss"
         }
       }
-    }]
+    }],
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-flow-strip-types"
   ]
 }
