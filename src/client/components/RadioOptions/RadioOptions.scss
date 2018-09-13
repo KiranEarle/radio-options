@@ -1,0 +1,41 @@
+@mixin option {
+  height: 45px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-container {
+  height: 45px;
+  border-radius: 100px;
+  border: solid 1px #fbfbfb;
+  margin-top: 13px;
+  position: relative;
+  display: flex;
+}
+
+.is-focus {
+  background-color: rgba(249, 249, 249, 0.5);
+  box-shadow: 0 0 6px 1px rgba(0, 115, 101, 0.5);
+}
+
+.option {
+  @include option;
+  left: 0;
+}
+
+.hide-option {
+  display: none;
+}
+
+.radio-option {
+  height: 100%;
+  width: 100%;
+}
+
+.question {
+  padding-top: 12px;
+  font-family: sans-serif;
+}
